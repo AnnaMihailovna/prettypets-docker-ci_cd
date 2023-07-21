@@ -1,0 +1,38 @@
+.button {
+  border: 1px solid var(--logout-btn-border);
+  border-radius: var(--button-border-radius);
+  outline: none;
+  transition: var(--common-transition);
+  background: none;
+  padding: 10px;
+  text-align: center;
+  background-color: var(--logout-btn-bgc);
+  color: var(--text-white-color);
+  display: flex;
+  align-items: center;
+}
+
+.button:disabled {
+  opacity: 0.4;
+}
+
+.button:hover:enabled {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.icon {
+  width: 18px;
+  height: 18px;
+}
+
+@media screen and (max-width: 430px) {
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .button {
+    padding: 9px;
+  }
+}

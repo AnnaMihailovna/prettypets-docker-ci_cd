@@ -1,0 +1,43 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 100px;
+  box-shadow: inset 0px -1px 0px var(--header-shadow);
+  margin: 0 auto;
+}
+
+.logo {
+  width: 40px;
+  height: 32px;
+}
+
+.btns_box {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 900px) {
+  .header {
+    padding: 15px 40px;
+  }
+
+  .btns_box {
+    gap: 20px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .header {
+    padding: 12px 14px;
+  }
+
+  .btns_box {
+    gap: 10px;
+  }
+}

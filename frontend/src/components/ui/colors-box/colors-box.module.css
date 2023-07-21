@@ -1,0 +1,32 @@
+.colors_box {
+  width: 100%;
+  border: 1px solid var(--logout-btn-border);
+  border-radius: var(--button-border-radius);
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+.colors_grid {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 360px;
+  width: 100%;
+}
+
+.color_item {
+  width: calc(100% / 6);
+  height: 60px;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
+.cat_color {
+  margin: 10px 0 10px 15px;
+  text-align: left;
+}
+
+@media screen and (max-width: 412px) {
+  .color_item {
+    width: calc(100% / 4);
+  }
+}

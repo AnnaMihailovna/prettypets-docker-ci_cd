@@ -1,0 +1,51 @@
+.button {
+  border: none;
+  outline: none;
+  transition: var(--common-transition);
+  background: none;
+  padding: 10px;
+  border-radius: var(--button-border-radius);
+  text-align: center;
+  background-color: var(--btn-bgc);
+  color: var(--text-white-color);
+  display: flex;
+  align-items: center;
+  max-height: 40px;
+  text-decoration: none;
+}
+
+.button:disabled {
+  opacity: 0.4;
+}
+
+.button:hover {
+  cursor: pointer;
+  opacity: 0.8;
+}
+
+.hidden {
+  display: block;
+}
+
+.none {
+  display: none;
+}
+
+.text {
+  padding-right: 11px;
+}
+
+@media screen and (max-width: 430px) {
+  .hidden {
+    display: none;
+  }
+
+  .icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .button {
+    padding: 10px;
+  }
+}

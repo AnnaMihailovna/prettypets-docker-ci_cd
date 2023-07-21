@@ -1,0 +1,102 @@
+.content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 100%;
+  margin-bottom: 40px;
+  max-width: 360px;
+}
+
+.btn {
+  position: relative;
+  z-index: 1;
+  border: 1px solid var(--logout-btn-border);
+  border-radius: var(--input-border-radius);
+  outline: none;
+  cursor: pointer;
+  background-color: var(--logout-btn-bgc);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 15px;
+  width: 100%;
+}
+
+.achievements_box {
+  position: absolute;
+  bottom: 28px;
+  left: 0;
+  width: calc(100% - 30px);
+  height: 202px;
+  max-height: 500px;
+  overflow-y: hidden;
+  padding: 15px 15px 20px;
+  background-color: #fff;
+  box-shadow: 0px 2px 20px rgba(79, 79, 95, 0.26);
+  border-radius: 8px 8px 0px 0px;
+}
+
+.achievements_list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  max-height: 140px;
+  overflow-y: auto;
+}
+
+.achievements_list::-webkit-scrollbar {
+  width: 2px;
+}
+.achievements_list::-webkit-scrollbar-track {
+  background: var(--logout-btn-border);
+}
+.achievements_list::-webkit-scrollbar-thumb {
+  background: var(--scroll-track-color);
+  border-radius: 20px;
+}
+
+.search_box {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.search_input_box {
+  width: 100%;
+}
+
+.search_input {
+  border-radius: 50px;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.add_btn {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  padding: 9px;
+  background-color: var(--btn-bgc);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: var(--common-transition);
+}
+
+.add_btn:hover {
+  opacity: 0.7;
+}
+
+.text {
+  padding-right: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@media screen and (max-width: 412px) {
+  .content {
+    max-width: 268px;
+  }
+}

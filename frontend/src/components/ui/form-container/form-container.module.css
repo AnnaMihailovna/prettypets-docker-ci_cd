@@ -1,0 +1,8 @@
+.content {
+  max-width: 360px;
+  margin: 0 auto;
+  padding: 20px 0 0;
+  border-radius: var(--common-border-radius);
+  background-color: var(--colors-interface-form);
+  box-shadow: 0px 30px 80px rgba(119, 119, 119, 0.25);
+}

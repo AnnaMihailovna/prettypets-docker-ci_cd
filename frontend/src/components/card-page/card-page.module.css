@@ -1,0 +1,162 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: calc(100vh - 120px);
+  box-sizing: border-box;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  margin-top: 70px;
+}
+
+.desktop_btn {
+  position: absolute;
+  top: 24px;
+}
+
+.desk_return {
+  left: -70px;
+}
+
+.desk_edit {
+  right: -70px;
+}
+
+.desk_remove {
+  top: 84px;
+  right: -70px;
+}
+
+.btns_box_mobile {
+  display: none;
+}
+
+.img_box {
+  width: 540px;
+  height: 440px;
+  padding: 12px;
+  border-radius: var(--button-border-radius);
+  box-shadow: 0px 100px 80px rgba(0, 0, 0, 0.03),
+    0px 30px 24px rgba(119, 119, 119, 0.04),
+    0px 12px 10px rgba(119, 119, 119, 0.03),
+    0px 4px 3px rgba(119, 119, 119, 0.02);
+}
+
+.img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--button-border-radius);
+}
+
+.cat_color_box {
+  padding: 10px;
+  border: 1px solid var(--logout-btn-border);
+  border-radius: var(--button-border-radius);
+  background-color: #f2f1ed;
+  margin: 35px 0;
+}
+
+.cat_color {
+  font-weight: 600;
+}
+
+.link {
+  width: 100%;
+}
+
+.date {
+  font-weight: 500;
+}
+
+.achievements {
+  font-weight: 500;
+  color: rgba(33, 33, 33, 0.6);
+  margin-bottom: 80px;
+  max-width: 540px;
+}
+
+@media screen and (max-width: 800px) {
+  .container {
+    gap: 20px;
+  }
+
+  .img_box {
+    width: 544px;
+    height: 394px;
+  }
+}
+
+@media screen and (max-width: 760px) {
+  .desktop_btn {
+    display: none;
+  }
+
+  .container {
+    flex-direction: column;
+  }
+
+  .btns_box_mobile {
+    display: flex;
+    width: 100%;
+    gap: 14px;
+    justify-content: center;
+  }
+
+  .mobile_btn {
+    width: 100%;
+    height: 36px;
+    display: flex;
+    justify-content: center;
+    box-sizing: border-box;
+  }
+
+  .name {
+    margin-top: 40px;
+    margin-bottom: 2px;
+  }
+
+  .cat_color_box {
+    margin-top: 30px;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 630px) {
+  .container {
+    width: 100%;
+    gap: 14px;
+  }
+
+  .img_box {
+    width: calc(100% - 24px);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .content {
+    margin-top: 60px;
+    min-height: calc(100vh - 174px);
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .content {
+    min-height: calc(100vh - 170px);
+  }
+
+  .img_box {
+    height: 280px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .img_box {
+    height: 193px;
+  }
+}

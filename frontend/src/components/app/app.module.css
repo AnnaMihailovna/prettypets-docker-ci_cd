@@ -1,0 +1,15 @@
+.app {
+  text-align: center;
+}
+
+.content {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+@media screen and (max-width: 540px) {
+  .content {
+    padding: 0 14px;
+  }
+}

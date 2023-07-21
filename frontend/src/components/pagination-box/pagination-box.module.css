@@ -1,0 +1,43 @@
+.content {
+  display: flex;
+  align-items: center;
+  margin-top: 54px;
+  margin-bottom: 70px;
+}
+
+.btn_box {
+  display: flex;
+  margin: 0 20px;
+}
+
+.btn {
+  outline: none;
+  border: 1px solid #e2e2ea;
+  box-sizing: border-box;
+  border-radius: 8px;
+  transform: matrix(1, 0, 0, -1, 0, 0);
+  transition: var(--common-transition);
+  padding: 0;
+  width: 32px;
+  height: 32px;
+}
+
+.num_btn {
+  outline: none;
+  border: none;
+  background: none;
+  padding: 0;
+  width: 24px;
+  height: 24px;
+  transition: var(--common-transition);
+}
+
+.btn:disabled {
+  opacity: 0.4;
+}
+
+.btn:hover:enabled,
+.num_btn:hover:enabled {
+  opacity: 0.7;
+  cursor: pointer;
+}

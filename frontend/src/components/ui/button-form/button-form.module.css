@@ -1,0 +1,24 @@
+.button {
+  border: none;
+  outline: none;
+  transition: var(--common-transition);
+  background: none;
+  padding: 10px;
+  border-radius: var(--button-border-radius);
+  text-align: center;
+  background-color: var(--btn-bgc);
+  color: var(--text-white-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-height: 40px;
+}
+
+.button:disabled {
+  opacity: 0.4;
+}
+
+.button:hover:enabled {
+  cursor: pointer;
+  opacity: 0.8;
+}

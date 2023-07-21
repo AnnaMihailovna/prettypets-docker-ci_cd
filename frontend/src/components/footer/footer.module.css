@@ -1,0 +1,10 @@
+.footer {
+  background-color: var(--logout-btn-bgc);
+  width: 100%;
+  padding: 15px 0;
+  margin: 0 auto;
+}
+
+.text {
+  letter-spacing: 0.1px;
+}
