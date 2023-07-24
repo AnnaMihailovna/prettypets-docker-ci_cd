@@ -127,6 +127,6 @@ jobs:
       - name: Push to DockerHub
         uses: docker/build-push-action@v4
         with:
-          context: ./gateway/
+          context: ./nginx/
           push: true
           tags: ${{ secrets.DOCKER_USERNAME }}/kittygram_gateway:latest
