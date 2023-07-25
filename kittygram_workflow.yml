@@ -176,4 +176,4 @@ jobs:
       with:
         to: ${{ secrets.TELEGRAM_TO }}
         token: ${{ secrets.TELEGRAM_TOKEN }}
-        message: Деплой успешно выполнен! ${GITHUB_REF}
+        message: Деплой успешно выполнен! $GITHUB_REF
