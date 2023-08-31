@@ -63,6 +63,10 @@ docker compose -f docker-compose.production.yml exec backend python manage.py cr
 ```
 Настроила внешний Nginx так, чтобы он отправлял в докер все запросы без исключения — и запросы к приложению, и запросы к статике. На сервере в редакторе nano открыла конфиг Nginx: nano /etc/nginx/sites-enabled/default. Изменила настройки location в секции server.
 ```
+location /media/ {
+        proxy_set_header Host $http_host;
+        proxy_pass http://127.0.0.1:8000;
+}
 location / {
         proxy_pass http://127.0.0.1:8000;
 }
