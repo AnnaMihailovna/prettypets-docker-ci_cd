@@ -91,5 +91,7 @@ Workflow написан так, что каждый git push в ветку main 
 ### Развёрнутый проект:
 http://prettykittygram.hopto.org
 
+(временно приостановлено, переезжаем)
+
 ### Над проектом работала (бэкенда и деплой)
 [AnnaMihailovna](https://github.com/AnnaMihailovna/)
